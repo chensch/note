@@ -4,7 +4,7 @@
 
 ### 前提条件 [GitHub](https://github.com/chensch/esxi-data "访问github")
 
-> 硬件：H3C R4900G3； 网卡驱动：[i40en-1.7.11-1OEM.650.0.0.4598673.x86_64.vib](https://github.com/chensch/esxi-data/tree/master/vib "访问github")； 磁盘阵列驱动：[vmware-esxi-drivers-scsi-aacraid-600.6.2.1.54013.vib](https://github.com/chensch/esxi-data/tree/master/vib "访问github")； ESXi-Customizer-PS-v2.6.0.ps1； VMware-ESXi-6.5.0-4564106-depot.zip（自己下载）
+> 硬件：H3C R4900G3； 网卡驱动：[i40en-1.7.11-1OEM.650.0.0.4598673.x86_64.vib](https://github.com/chensch/esxi-data/tree/master/vib "访问github")； 磁盘阵列驱动：[vmware-esxi-drivers-scsi-aacraid-600.6.2.1.54013.vib](https://github.com/chensch/esxi-data/tree/master/vib "访问github")； [ESXi-Customizer-PS-v2.6.0.ps1](https://github.com/chensch/esxi-data "访问github")； VMware-ESXi-6.5.0-4564106-depot.zip（自己下载）
 
 ###  #安装VMware.PowerCLI
 
@@ -17,6 +17,9 @@
 ### #设置PowerShell执行策略
 
 - `Set-ExecutionPolicy RemoteSigned`
+
+- 是否要更改执行策略?键入`A`
+
 - `Get-ExecutionPolicy`返回`RemoteSigned`为正常
 
 ### #生成自定义镜像
